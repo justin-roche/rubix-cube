@@ -1,0 +1,13 @@
+{
+  "name": "rubix-cube",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Tests.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "JR",
+  "license": "ISC"
+}

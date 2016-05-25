@@ -1,0 +1,82 @@
+<!DOCTYPE>
+<html>
+	
+	<head>
+		<meta charset="UTF-8">
+		
+ 			<link rel='stylesheet' href='lib/bootstrap-3.3.6-dist/css/bootstrap.css'/>
+			<link rel='stylesheet' href='css/rubix.css'/>
+<!-- 			<link rel='stylesheet' href='css/bootstrap-slider.css'/>
+ -->		<link rel='stylesheet' href='css/cube.css'/>
+
+			<script src="lib/jquery/dist/jquery.js"></script>
+			<script src='lib/bootstrap-3.3.6-dist/js/bootstrap.js'></script>
+<!-- 			<script src='lib/bootstrap-slider.js'></script>
+ -->
+		    <script src="js/App.js"></script>
+		    <script src="js/utils.js"></script>
+		    <script src="js/Face.js"></script>
+			<script src="js/Cube.js"></script>
+			<script src="js/Viewer.js"></script>
+			<script src="js/Solver.js"></script>
+		
+	</head>
+
+<body >
+
+<div class= "container col-xs-12 well" style="height: 70%; padding-bottom:20px; overflow:scroll">
+
+<div id="results"  style="overflow: display">
+	 <div id="viewer">
+		 <div id="container">
+		  <div id="cube" class="animate">
+			<!--orientation of divs by face of cube: FRBLDU -->		
+ 			<div></div>
+		    <div></div>
+		    <div></div>
+		    <div></div>
+		    <div></div>
+		    <div></div>
+		  </div>
+		</div>
+	</div>
+
+
+</div>
+
+</div>
+
+
+<div class="col-xs-12 well" style="position: fixed; bottom: 0; height: 25%; float: left">
+    <div class="row">
+      <div class="well col-xs-4 col-sm-6">
+ 			<button id="reset" class="btn-default col-xs-3" style="height:50%;">Reset</button>
+ 			<button id="scramble" class="btn-warning col-xs-3" style="height:50%;">Scramble</button>
+ 			<button id="solve" class="btn-info col-xs-3" style="height:50%;">Solve</button>
+        	<button id="rotate" class="btn-primary col-xs-3" style="height:50%;">Rotate</button>
+        	<!-- <input id="xslide" data-slider-id='xSlide' type="text" data-slider-min="0" data-slider-max="360" data-slider-step="1" data-slider-value="0"/>
+        	<input id="yslide" data-slider-id='ySlide' type="text" data-slider-min="0" data-slider-max="360" data-slider-step="1" data-slider-value="0"/> -->
+        	<!-- <button id ="front" class="btn-primary">F</button>
+        	<button id ="right" class="btn-primary">R</button>
+        	<button id ="left" class="btn-primary">L</button>
+        	<button id ="down" class="btn-primary">D</button>
+        	<button id ="up" class="btn-primary">U</button>
+        	<button id ="back" class="btn-primary">B</button> -->
+
+
+
+      </div>
+      <div class="well col-xs-8 col-sm-6" style="padding: 0px;">
+     	<textarea id='rotation' class="col-xs-12" style="height:50%;" placeholder="enter rotations(FUDRL). 'F' rotates front clockwise, 'f' rotates front counterclockwise"></textarea>
+		<textarea id='results' class="col-xs-12" style="height:50%;" placeholder="results here"></textarea>
+        
+      </div>
+      
+    </div>
+  </div>
+				<script src="js/View.js"></script>
+
+</body>
+
+
+</html>
